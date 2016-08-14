@@ -4,7 +4,8 @@
 @import "global";
 
 header {
-  background-color: $yellow;
+  background-image: image-url("main-bg.jpg");
+  background-size: cover;
   height: 100vh;
   min-height: 600px;
   max-height: 800px;
