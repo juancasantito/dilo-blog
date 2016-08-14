@@ -6,9 +6,7 @@
 header {
   background-image: image-url("main-bg.jpg");
   background-size: cover;
-  height: 100vh;
-  min-height: 500px;
-  max-height: 600px;
+  height: 600px;
   text-transform: uppercase;
   padding: 30px 50px;
   h2 {
@@ -33,6 +31,24 @@ header {
     font-weight: 300;
     font-size: 1.5em;
   }
+}
+
+@keyframes blinking {
+  from {opacity: 1;}
+  to {opacity: 0.2;}
+}
+
+.arrow {
+  position: relative;
+  bottom: -5%;
+  display: block;
+  font-weight: bolder;
+  font-size: 3em;
+  text-align: center;
+  color: $red;
+  animation-name: blinking;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
 }
 
 #posts {

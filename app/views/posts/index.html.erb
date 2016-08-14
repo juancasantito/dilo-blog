@@ -3,15 +3,13 @@
   </h2>
   <h1>Blog.</h1>
   <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum .</p>
+  <p class="arrow">&or;</p>
 </header>
 
 <div class="container" id="posts">
   <div class="row">
     <div class="col s12">
       <p id="notice"><%= notice %></p>
-
-      <h1>Posts</h1>
-
       <table>
         <thead>
           <tr>
@@ -38,11 +36,6 @@
       <!-- Floating Button -->
 
       <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-        <!-- <a class="btn-floating btn-large red">
-         <i class="large material-icons">+</i>
-          +
-        </a> -->
-
         <%= link_to  new_post_path, class: "btn-floating btn-large red" do %>
           <i class="large material-icons">add</i>
         <%end%>
