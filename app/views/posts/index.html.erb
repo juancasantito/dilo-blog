@@ -1,13 +1,13 @@
 <header>
-  <h2>Science, Life, Technology<strong>...</strong></h2>
+  <h2>Science, Life, Technology<strong>...</strong>
+  </h2>
   <h1>Blog.</h1>
-  <p class="flow-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages</p>
+  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum .</p>
 </header>
 
-<div class="container">
+<div class="container" id="posts">
   <div class="row">
     <div class="col s12">
-
       <p id="notice"><%= notice %></p>
 
       <h1>Posts</h1>
@@ -35,8 +35,18 @@
       </table>
 
       <br>
+      <!-- Floating Button -->
 
-      <%= link_to 'New Post', new_post_path %>
+      <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+        <!-- <a class="btn-floating btn-large red">
+         <i class="large material-icons">+</i>
+          +
+        </a> -->
+
+        <%= link_to  new_post_path, class: "btn-floating btn-large red" do %>
+          <i class="large material-icons">+</i>
+        <%end%>
+      </div>
 
     </div>
   </div>
