@@ -1,1 +1,15 @@
 @import 'colors';
+
+body {
+  background-color: $green;
+}
+
+.container {
+  width: 80%;
+}
+
+.main-section {
+  max-width: 800px;
+  margin: auto;
+  background-color: $white;
+}
