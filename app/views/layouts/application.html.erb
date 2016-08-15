@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
 
-  <body>
+  <body class=" <%= @home_page ? 'home_page' : '' %>">
     <div class="main-section">
       <%= yield %>
     </div>

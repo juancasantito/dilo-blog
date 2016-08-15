@@ -1,8 +1,12 @@
 @import 'colors';
 
 body {
-  background-color: $gray;
   min-height: 700px;
+  background-color: $yellow;
+}
+
+.home_page {
+  background-color: $gray;
 }
 
 strong {
