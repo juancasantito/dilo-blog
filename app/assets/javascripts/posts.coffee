@@ -4,21 +4,21 @@
 
 $(document).ready ->
   x = $(window).height()
-  if x < 600
+  if x < 700
     $('.fixed-action-btn').slideUp()
   else
     $('.fixed-action-btn').slideDown()
 
 $(window).resize ->
   x = $(this).height()
-  if x < 500
+  if x < 600
     $('.fixed-action-btn').slideUp()
   else
     $('.fixed-action-btn').slideDown()
 
-$(document).scroll ->
+$(window).scroll ->
   y = $(this).scrollTop()
-  if y > 200
+  if y < 100
     $('.fixed-action-btn').slideUp()
    else
     $('.fixed-action-btn').slideDown()
