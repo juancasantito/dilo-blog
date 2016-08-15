@@ -13,10 +13,6 @@ h3 {
   text-transform: uppercase;
 }
 
-i {
-  margin: 10px 0;
-  display: block;
-}
 header {
   background-image: image-url("main-bg.jpg");
   background-size: cover;
@@ -85,6 +81,11 @@ header {
       color: $red;
       font-size: 1.1em;
       font-weight: bold;
+    }
+
+    i {
+      margin: 10px 0;
+      display: block;
     }
   }
 }
