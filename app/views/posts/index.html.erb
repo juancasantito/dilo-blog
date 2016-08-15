@@ -11,25 +11,25 @@
     <div class="col s12">
       <p id="notice"><%= notice %></p>
       <% @posts.each do |post| %>
-        <div class="post">
-          <div class="row">
-            <div class="col-xs-12">
-              <h3><%= post.title %></h3>
-            </div>
-            <div class="col-xs-12">
-              <i><%= post.created_at %></i>
-              <p class=><%= truncate(post.content, length: 400) %></p>
-              <%= link_to 'View More', post %>
-            </div>
+      <div class="post">
+        <div class="row">
+          <div class="col-xs-12">
+            <h3><%= post.title %></h3>
+          </div>
+          <div class="col-xs-12">
+            <i><%= post.created_at %></i>
+            <p class=><%= truncate(post.content, length: 400) %></p>
+            <%= link_to 'View More', post %>
           </div>
         </div>
+      </div>
       <%end%>
       <br>
       <!-- Floating Button -->
 
       <div class="fixed-action-btn" style="bottom: 45px; right: 24px;" id="homepage-btn">
         <%= link_to  new_post_path, class: "btn-floating btn-large red" do %>
-          <i class="large material-icons">add</i>
+        <i class="large material-icons">add</i>
         <%end%>
       </div>
 
