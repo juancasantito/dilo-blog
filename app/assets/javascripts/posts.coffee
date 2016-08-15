@@ -3,11 +3,13 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $(document).ready ->
+  $(".button-collapse").sideNav()
   x = $(window).height()
   if x < 700
     $('#homepage-btn').slideUp()
   else
     $('#homepage-btn').slideDown()
+
 
 $(window).resize ->
   x = $(this).height()

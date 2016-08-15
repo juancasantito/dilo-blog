@@ -16,6 +16,12 @@ strong {
   color: $red;
 }
 
+a:hover {
+  background-color: $gray;
+}
+
+// container
+
 .container {
   width: 97%;
 }
@@ -23,4 +29,17 @@ strong {
 .main-section {
   max-width: 800px;
   margin: auto;
+}
+
+.brand-logo {
+  font-weight: bold;
+  text-decoration: overline;
+}
+
+// Navigation bar
+
+nav {
+  ul {
+    margin-top: 20px;
+  }
 }
