@@ -7,6 +7,9 @@ body {
 
 .home_page {
   background-color: $gray;
+  .main-section {
+    background-color: $white;
+  }
 }
 
 strong {
@@ -14,11 +17,10 @@ strong {
 }
 
 .container {
-  width: 95%;
+  width: 97%;
 }
 
 .main-section {
   max-width: 800px;
   margin: auto;
-  background-color: $white;
 }

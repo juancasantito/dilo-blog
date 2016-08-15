@@ -2,16 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "global";
-
 body {
   background-color: $yellow;
+  height: 100%;
 }
-
+a,
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
 header {
   background-image: image-url("main-bg.jpg");
   background-size: cover;
   height: 600px;
-  text-transform: uppercase;
   padding: 30px 50px;
   h2 {
     font-size: 2.5em;
@@ -19,16 +23,13 @@ header {
     line-height: 1.1em;
     margin-bottom: 5px;
   }
-
   h1 {
     margin-top: 0;
     font-weight: bold;
     font-size: 4em;
     color: $red;
   }
-
   p {
-    text-transform:none;
     line-height: 1.5em;
     margin: 0;
     display: block;
@@ -36,12 +37,14 @@ header {
     font-size: 1.5em;
   }
 }
-
 @keyframes blinking {
-  from {opacity: 1;}
-  to {opacity: 0.2;}
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.2;
+  }
 }
-
 .arrow {
   position: relative;
   bottom: -5%;
@@ -56,35 +59,53 @@ header {
   height: 60px;
   border-radius: 50%;
   animation-name: blinking;
-   animation-duration: 2s;
-   animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
-
 #posts {
   position: relative;
   top: -100px;
   background-color: $white;
-
   .post {
     padding: 20px 40px 0;
-
     h3 {
       text-transform: uppercase;
       font-size: 3em;
       font-weight: 600;
     }
-
     p {
       margin: 0;
     }
-
     a {
       color: $red;
       font-size: 1.1em;
-      text-transform: uppercase;
       font-weight: bold;
     }
   }
+}
+// Post show view styling
 
+#post-wrapper {
+  h1 {
+    color: $white;
+    font-size: 3em;
+    padding: 3%;
+    font-weight: 200;
+  }
+  .container {
+    margin: 0;
+  }
 
+  p {
+    font-size: 1.2em;
+    margin: 50px 4%;
+  }
+}
+
+@media (min-width: 600px) {
+  #post-wrapper {
+    .col {
+      min-height: 500px;
+    }
+  }
 }

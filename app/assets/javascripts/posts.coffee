@@ -5,20 +5,20 @@
 $(document).ready ->
   x = $(window).height()
   if x < 700
-    $('.fixed-action-btn').slideUp()
+    $('#homepage-btn').slideUp()
   else
-    $('.fixed-action-btn').slideDown()
+    $('#homepage-btn').slideDown()
 
 $(window).resize ->
   x = $(this).height()
   if x < 600
-    $('.fixed-action-btn').slideUp()
+    $('#homepage-btn').slideUp()
   else
-    $('.fixed-action-btn').slideDown()
+    $('#homepage-btn').slideDown()
 
 $(window).scroll ->
   y = $(this).scrollTop()
   if y < 100
-    $('.fixed-action-btn').slideUp()
+    $('#homepage-btn').slideUp()
    else
-    $('.fixed-action-btn').slideDown()
+    $('#homepage-btn').slideDown()
